@@ -44,3 +44,20 @@ act = ["sleep","school","eat","play","others"]
 hours = [10,7,1,3,3]
 plt.pie(hours,labels=act,autopct="%1.0f%%",startangle=90,colors=["red","blue","purple","green","orange"],shadow=True)
 plt.show()
+
+#stack plot
+monday = [7,8,7,9,10]
+tuesday = [6,10,2,3,5]
+wednesday= [7,7,4,3,6]
+thursday= [10,2,5,6,3]
+friday= [7,6,2,10,4]
+plt.stackplot(act,monday,tuesday,wednesday,thursday,friday,labels=["mon","tue","wed","thur","fri"])
+plt.legend()
+plt.show()
+#subplots
+plt.figure(figsize=(20,8))
+plt.subplot(2,3,4)
+plt.pie(hours,labels=act,autopct="%1.0f%%",startangle=90,colors=["red","blue","purple","green","orange"],shadow=True)
+plt.subplot(2,3,2)
+plt.scatter(x,y,color = "red", marker="*",s=25)
+plt.show()
